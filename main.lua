@@ -6,9 +6,9 @@ local menuItems, inputsDown, stickCooldown = {}, 0, 0
 
 local function update_items()
     if Base.is_active() then
-        menuItems = {"CONTINUAR","PROXIMA PERGUNTA","PARAR QUIZ","PLACAR","CONFIGURACOES","SAIR"}
+        menuItems = {"PROXIMA PERGUNTA","PARAR QUIZ","PLACAR","CONFIGURACOES","SAIR"}
     else
-        menuItems = {"CONTINUAR","NOVO QUIZ","PLACAR","CONFIGURACOES","SAIR"}
+        menuItems = {"NOVO QUIZ","PLACAR","CONFIGURACOES","SAIR"}
     end
     if menuSelection > #menuItems then menuSelection = 1 end
 end
@@ -39,8 +39,6 @@ end
 local function select_item()
     update_items()
     local item = menuItems[menuSelection]
-    if item == "CONTINUAR" then
-        close_menu()
     elseif item == "NOVO QUIZ" then
         if Base.start() then
             close_menu()
