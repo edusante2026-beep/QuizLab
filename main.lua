@@ -1,4 +1,4 @@
--- name: \#00FF75\QuizLab \#9AFF27\(v1.0)
+-- name: \\#00FF75\\QuizLab \\#9AFF27\\(v1.0)
 -- description: Quiz de ciencias local
 local Base = require("base")
 local menuOpen, menuSelection, menuScreen = false, 1, "main"
