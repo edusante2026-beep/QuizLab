@@ -58,7 +58,6 @@ local function select_item()
         menuScreen, menuSelection = "settings", 1
         play_sound(SOUND_MENU_CLICK_FILE_SELECT, gGlobalSoundSource)
     elseif item == "SAIR" then
-        Base.stop()
         close_menu()
     end
 end
